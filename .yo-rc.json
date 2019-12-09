@@ -1,0 +1,31 @@
+{
+  "generator-nozzy": {
+    "version": "5.0.4",
+    "namespace": "message",
+    "service": "default_answer",
+    "authz": {
+      "enabled": false
+    },
+    "http": {
+      "enabled": false
+    },
+    "mysql": {
+      "enabled": true
+    },
+    "mongo": {
+      "enabled": false
+    },
+    "grpc": {
+      "enabled": true,
+      "server": {
+        "enabled": true
+      },
+      "client": {
+        "enabled": false
+      }
+    },
+    "amqp": {
+      "enabled": false
+    }
+  }
+}

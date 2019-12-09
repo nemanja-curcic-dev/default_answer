@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: default_answer
+  namespace: message
+spec:
+  ports:
+  - name: http
+    port: 3000
+    protocol: TCP
+    targetPort: 3000
+  - name: grpc
+    port: 50051
+    protocol: TCP
+    targetPort: 50051
+  selector:
+    app: default_answer
+  sessionAffinity: None
+  type: ClusterIP

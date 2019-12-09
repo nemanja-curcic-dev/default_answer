@@ -1,0 +1,46 @@
+{
+  "name": "message-default_answer",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/index.js",
+    "web-client": "grpcui -import-path src/proto -proto message/default_answer/default_answer.proto -port 5000 -plaintext localhost:50051",
+    "lint": "./node_modules/.bin/eslint --fix ."
+  },
+  "keywords": [
+    "node",
+    "message",
+    "default_answer",
+    "message-default_answer"
+  ],
+  "author": "Coozzy AG",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/node": "7.5.5",
+    "@babel/plugin-proposal-optional-chaining": "7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "7.2.0",
+    "@babel/preset-env": "7.5.5",
+    "@babel/polyfill": "7.4.4",
+    "eslint": "6.3.0",
+    "babel-eslint": "10.0.3",
+    "eslint-plugin-security": "1.4.0",
+    "nodemon": "1.19.2"
+  },
+  "dependencies": {
+    "path": "0.12.7",
+    "@coozzy/logger": "1.1.1",
+    "@coozzy/error": "1.4.1",
+    "@coozzy/prometheus": "2.1.1",
+    "@coozzy/request-id": "1.0.2",
+    "grpc": "1.23.3",
+    "@grpc/proto-loader": "0.5.2",
+    "@hpidcock/node-grpc-interceptors": "0.0.9",
+    "mysql2": "1.7.0",
+    "knex": "0.19.3",
+    "uniqid": "5.0.3",
+    "sequelize": "4.44.3"
+  }
+}
