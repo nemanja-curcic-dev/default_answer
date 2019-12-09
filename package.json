@@ -39,7 +39,7 @@
     "@grpc/proto-loader": "0.5.2",
     "@hpidcock/node-grpc-interceptors": "0.0.9",
     "mysql2": "1.7.0",
-    "knex": "0.19.3",
+    "knex": "0.19.5",
     "uniqid": "5.0.3",
     "sequelize": "4.44.3"
   }
