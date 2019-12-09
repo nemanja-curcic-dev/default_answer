@@ -42,7 +42,7 @@ const knex = Knex({
         },
     }
 });
-knex.migrate.latest();
+// knex.migrate.latest();
 
 const DefaultAnswer = require('./model/default_answer');
 
