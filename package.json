@@ -41,6 +41,6 @@
     "mysql2": "1.7.0",
     "knex": "0.19.3",
     "uniqid": "5.0.3",
-    "sequelize": "4.44.3"
+    "sequelize": "5.15.1"
   }
 }
