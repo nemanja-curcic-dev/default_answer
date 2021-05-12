@@ -35,7 +35,7 @@
     "@coozzy/error": "1.4.1",
     "@coozzy/prometheus": "2.1.1",
     "@coozzy/request-id": "1.0.2",
-    "grpc": "1.23.3",
+    "grpc": "1.24.9",
     "@grpc/proto-loader": "0.5.2",
     "@hpidcock/node-grpc-interceptors": "0.0.9",
     "mysql2": "1.7.0",
